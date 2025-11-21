@@ -1,7 +1,6 @@
 """
 Testes automatizados para validação de prompts.
 """
-
 import pytest
 import yaml
 import sys
@@ -17,24 +16,30 @@ def load_prompts(file_path: str):
     with open(file_path, 'r', encoding='utf-8') as f:
         return yaml.safe_load(f)
 
-# TODO: Adicione seus testes aqui!
-#
-# Este arquivo deve conter testes para validar a estrutura e o conteúdo
-# dos seus prompts.
-#
-# Exemplos de testes que você pode criar:
-# - Testar se todos os prompts têm os campos obrigatórios (system_prompt, description, version, techniques_applied).
-# - Testar se o 'system_prompt' não está vazio e tem um tamanho mínimo.
-# - Testar se certas técnicas de prompting (ex: Role Prompting, Few-shot Learning) foram aplicadas.
-# - Testar o formato da versão.
-#
-# Use as classes e métodos de teste do pytest para organizar seus testes.
+class TestPrompts:
+    def test_prompt_has_system_prompt(self):
+        """Verifica se o campo 'system_prompt' existe e não está vazio."""
+        pass
 
-# Exemplo de estrutura de teste:
-# class TestMyPrompts:
-#     def test_my_first_test(self):
-#         # Seu código de teste aqui
-#         assert True
+    def test_prompt_has_role_definition(self):
+        """Verifica se o prompt define uma persona (ex: "Você é um Product Manager")."""
+        pass
+
+    def test_prompt_mentions_format(self):
+        """Verifica se o prompt exige formato Markdown ou User Story padrão."""
+        pass
+
+    def test_prompt_has_few_shot_examples(self):
+        """Verifica se o prompt contém exemplos de entrada/saída (técnica Few-shot)."""
+        pass
+
+    def test_prompt_no_todos(self):
+        """Garante que você não esqueceu nenhum `[TODO]` no texto."""
+        pass
+
+    def test_minimum_techniques(self):
+        """Verifica (através dos metadados do yaml) se pelo menos 2 técnicas foram listadas."""
+        pass
 
 if __name__ == "__main__":
     pytest.main([__file__, "-v", "--tb=short"])
