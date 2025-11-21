@@ -1,0 +1,25 @@
+# Este arquivo deve conter o PROMPT OTIMIZADO (versão "v2") que o aluno irá desenvolver.
+#
+# O objetivo é que o aluno crie e otimize seu prompt aqui, aplicando as técnicas
+# de engenharia de prompt aprendidas no curso.
+
+bug_to_user_story_v2:
+  description: "Prompt otimizado para converter relatos de bugs em User Stories" # Manter essa descrição
+  system_prompt: |
+    # Insira aqui o seu system_prompt otimizado.
+    # Lembre-se de aplicar as técnicas de prompt engineering aprendidas.
+    # Exemplos: Role-playing, Chain-of-Thought, Few-Shot Learning, etc.
+
+  user_prompt: "{bug_report}" # Manter o user_prompt
+
+  # Metadados
+  version: "v2" # Deve ser v2 ou indicar otimização
+  created_at: "YYYY-MM-DD" # Preencha com a data de criação
+  tags: ["bug-analysis", "user-story", "product-management"] # Adapte as tags
+
+  # Técnicas de Prompting Aplicadas (MÍNIMO DE 2 OBRIGATÓRIO PARA VALIDAÇÃO)
+  # Liste aqui as técnicas que você usou para otimizar o prompt.
+  techniques_applied:
+    - "Nome da Técnica 1" # Ex: "Role-playing (Product Manager Sênior)"
+    - "Nome da Técnica 2" # Ex: "Chain-of-Thought (passos detalhados)"
+    # Adicione mais técnicas conforme necessário.
