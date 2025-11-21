@@ -79,9 +79,9 @@ def evaluate_f1_score(question: str, answer: str, reference: str) -> Dict[str, A
     Returns:
         Dict com score e reasoning:
         {
-            "score": 0.85,
+            "score": 0.95,
             "precision": 0.9,
-            "recall": 0.8,
+            "recall": 0.99,
             "reasoning": "Explicação do LLM..."
         }
     """
@@ -261,7 +261,7 @@ def evaluate_precision(question: str, answer: str, reference: str) -> Dict[str, 
     Returns:
         Dict com score e reasoning:
         {
-            "score": 0.88,
+            "score": 0.98,
             "reasoning": "Explicação do LLM..."
         }
     """

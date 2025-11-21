@@ -304,6 +304,7 @@ python src/evaluate.py
 3. **Evidências no LangSmith**:
    - Link público (ou screenshots) do dashboard do LangSmith
    - Devem estar visíveis:
+   
      - Dataset de avaliação com ≥ 20 exemplos
      - Execuções dos prompts v1 (ruins) com notas baixas
      - Execuções dos prompts v2 (otimizados) com notas ≥ 0.9
