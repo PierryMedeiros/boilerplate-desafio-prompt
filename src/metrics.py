@@ -265,6 +265,7 @@ def evaluate_precision(question: str, answer: str, reference: str) -> Dict[str, 
             "reasoning": "Explicação do LLM..."
         }
     """
+    
     evaluator_prompt = f"""
 Você é um avaliador especializado em detectar PRECISÃO e ALUCINAÇÕES em respostas de IA.
 
